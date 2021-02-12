@@ -23,3 +23,7 @@ script:
  # - coverage xml
  # - python-codacy-coverage -r coverage.xml
   - python ./manage.py test census 
+slack:
+  on_failure: always
+email:
+    - serpercap@alum.us.es
