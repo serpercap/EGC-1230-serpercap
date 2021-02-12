@@ -22,4 +22,4 @@ script:
  # - coverage run --branch --source=. ./manage.py test authentication --keepdb --with-xunit
  # - coverage xml
  # - python-codacy-coverage -r coverage.xml
-  - python ./manage.py test census –keepdb
+  - python ./manage.py test census 
