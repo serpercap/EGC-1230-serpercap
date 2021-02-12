@@ -27,7 +27,7 @@ SECRET_KEY = '^##ydkswfu0+=ofw0l#$kv^8n)0$i(qd&d&ol#p9!b$8*5%j1+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
 
 # Application definition
@@ -73,7 +73,19 @@ MODULES = [
     'voting',
 ]
 
-BASEURL = 'http://localhost:8000'
+BASEURL = 'https://herokuexamenegc.herokuapp.com'
+
+APIS = {
+    'authentication': 'https://herokuexamenegc.herokuapp.com', 
+    'base': 'https://herokuexamenegc.herokuapp.com',
+    'booth': 'https://herokuexamenegc.herokuapp.com',
+    'census': 'https://herokuexamenegc.herokuapp.com',
+    'mixnet': 'https://herokuexamenegc.herokuapp.com',
+   	'postproc': 'https://herokuexamenegc.herokuapp.com',
+    'store': 'https://herokuexamenegc.herokuapp.com',
+    'visualizer': 'https://herokuexamenegc.herokuapp.com',
+    'voting': 'https://herokuexamenegc.herokuapp.com',
+		}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -183,3 +195,4 @@ if os.path.exists("config.jsonnet"):
 
 
 INSTALLED_APPS = INSTALLED_APPS + MODULES
+django_heroku.settings(locals())
