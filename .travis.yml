@@ -8,6 +8,9 @@ before_script:
   - psql -U postgres -c "create user examenfebrero password 'examenfebrero'"
   - psql -U postgres -c "create database examenfebrerodb owner examenfebrero"
   - psql -U postgres -c "ALTER USER examenfebrero CREATEDB"
+  - psql -U postgres -c "create user decide password 'decide'"
+  - psql -U postgres -c "create database decidedb owner decide"
+  - psql -U postgres -c "ALTER USER decide CREATEDB"
 language: python
 python:
   - "3.7"
