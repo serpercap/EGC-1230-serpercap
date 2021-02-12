@@ -73,18 +73,18 @@ MODULES = [
     'voting',
 ]
 
-BASEURL = 'https://herokuexamenegc.herokuapp.com'
+BASEURL = 'https://herokuserpercapegc.herokuapp.com'
 
 APIS = {
-    'authentication': 'https://herokuexamenegc.herokuapp.com', 
-    'base': 'https://herokuexamenegc.herokuapp.com',
-    'booth': 'https://herokuexamenegc.herokuapp.com',
-    'census': 'https://herokuexamenegc.herokuapp.com',
-    'mixnet': 'https://herokuexamenegc.herokuapp.com',
-   	'postproc': 'https://herokuexamenegc.herokuapp.com',
-    'store': 'https://herokuexamenegc.herokuapp.com',
-    'visualizer': 'https://herokuexamenegc.herokuapp.com',
-    'voting': 'https://herokuexamenegc.herokuapp.com',
+    'authentication': 'https://herokuserpercapegc.herokuapp.com', 
+    'base': 'https://herokuserpercapegc.herokuapp.com',
+    'booth': 'https://herokuserpercapegc.herokuapp.com',
+    'census': 'https://herokuserpercapegc.herokuapp.com',
+    'mixnet': 'https://herokuserpercapegc.herokuapp.com',
+   	'postproc': 'https://herokuserpercapegc.herokuapp.com',
+    'store': 'https://herokuserpercapegc.herokuapp.com',
+    'visualizer': 'https://herokuserpercapegc.herokuapp.com',
+    'voting': 'https://herokuserpercapegc.herokuapp.com',
 		}
 
 MIDDLEWARE = [
